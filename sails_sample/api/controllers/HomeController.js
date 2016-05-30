@@ -5,7 +5,15 @@
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
-module.exports = {
-	
+var HomeController = {
+
+  index: function(req, res) {
+    res.view({hello: 'Hello Sails'});
+  }
 };
+
+
+
+
+module.exports = HomeController;
 
